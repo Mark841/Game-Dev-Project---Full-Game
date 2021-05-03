@@ -20,6 +20,8 @@ var gdjs;
       let i = 0;
       for (let j = 0; j < data.length; ++j) {
         const varData = data[j];
+        if (!varData.name)
+          continue;
         const variable = that.get(varData.name);
         variable.reinitialize(varData);
         if (!keepOldVariables) {
@@ -94,6 +96,8 @@ var gdjs;
   let VariablesContainer = VariablesContainer2;
   VariablesContainer._deletedVars = [];
   VariablesContainer.badVariablesContainer = {
+    _variables: new Hashtable(),
+    _variablesArray: [],
     has: function() {
       return false;
     },
@@ -114,9 +118,37 @@ var gdjs;
     }
   };
   VariablesContainer.badVariable = {
-    getChild: function() {
-      return VariablesContainer2.badVariable;
+    _type: "number",
+    _bool: false,
+    _children: {},
+    _childrenArray: [],
+    _str: "",
+    _undefinedInContainer: true,
+    _value: 0,
+    reinitialize: () => {
     },
+    addChild: () => gdjs2.VariablesContainer.badVariable,
+    castTo: () => {
+    },
+    clearChildren: () => {
+    },
+    clone: () => gdjs2.VariablesContainer.badVariable,
+    getChildrenCount: () => 0,
+    replaceChildren: () => {
+    },
+    replaceChildrenArray: () => {
+    },
+    getType: function() {
+      return "number";
+    },
+    isPrimitive: function() {
+      return true;
+    },
+    setValue: () => {
+    },
+    getValue: () => 0,
+    getChild: () => gdjs2.VariablesContainer.badVariable,
+    getChildAt: () => gdjs2.VariablesContainer.badVariable,
     hasChild: function() {
       return false;
     },
@@ -135,14 +167,30 @@ var gdjs;
     setString: function() {
       return;
     },
+    setBoolean: function() {
+      return;
+    },
     getAsString: function() {
-      return "";
+      return "0";
     },
     getAsNumber: function() {
       return 0;
     },
+    getAsBoolean: function() {
+      return false;
+    },
     getAllChildren: function() {
       return {};
+    },
+    getAllChildrenArray: function() {
+      return [];
+    },
+    pushVariableCopy: () => {
+    },
+    pushValue: () => {
+    },
+    removeAtIndex: function() {
+      return;
     },
     add: function() {
       return;
@@ -159,11 +207,14 @@ var gdjs;
     concatenate: function() {
       return;
     },
+    concatenateString: function() {
+      return;
+    },
     setUndefinedInContainer: function() {
       return;
     },
     isUndefinedInContainer: function() {
-      return;
+      return true;
     }
   };
   gdjs2.VariablesContainer = VariablesContainer;

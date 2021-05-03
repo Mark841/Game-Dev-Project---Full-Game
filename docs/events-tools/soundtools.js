@@ -10,6 +10,9 @@ var gdjs;
       sound2.setGlobalVolume = function(runtimeScene, globalVolume) {
         runtimeScene.getSoundManager().setGlobalVolume(globalVolume);
       };
+      sound2.unloadAllAudio = function(runtimeScene) {
+        runtimeScene.getSoundManager().unloadAll();
+      };
       sound2.playSound = function(runtimeScene, soundFile, loop, volume, pitch) {
         runtimeScene.getSoundManager().playSound(soundFile, loop, volume, pitch);
       };
@@ -44,19 +47,19 @@ var gdjs;
       };
       sound2.getSoundOnChannelVolume = function(runtimeScene, channel) {
         const sound3 = runtimeScene.getSoundManager().getSoundOnChannel(channel);
-        return sound3 ? sound3.volume() * 100 : 100;
+        return sound3 ? sound3.getVolume() * 100 : 100;
       };
       sound2.setSoundOnChannelVolume = function(runtimeScene, channel, volume) {
         const sound3 = runtimeScene.getSoundManager().getSoundOnChannel(channel);
-        sound3 && sound3.volume(volume / 100);
+        sound3 && sound3.setVolume(volume / 100);
       };
       sound2.getSoundOnChannelPlayingOffset = function(runtimeScene, channel) {
         const sound3 = runtimeScene.getSoundManager().getSoundOnChannel(channel);
-        return sound3 ? sound3.seek() : 0;
+        return sound3 ? sound3.getSeek() : 0;
       };
       sound2.setSoundOnChannelPlayingOffset = function(runtimeScene, channel, playingOffset) {
         const sound3 = runtimeScene.getSoundManager().getSoundOnChannel(channel);
-        sound3 && sound3.seek(playingOffset);
+        sound3 && sound3.setSeek(playingOffset);
       };
       sound2.getSoundOnChannelPitch = function(runtimeScene, channel) {
         const sound3 = runtimeScene.getSoundManager().getSoundOnChannel(channel);
@@ -66,6 +69,8 @@ var gdjs;
         const sound3 = runtimeScene.getSoundManager().getSoundOnChannel(channel);
         sound3 && sound3.setRate(pitch);
       };
+      sound2.preloadSound = (runtimeScene, soundFile) => runtimeScene.getSoundManager().loadAudio(soundFile, false);
+      sound2.unloadSound = (runtimeScene, soundFile) => runtimeScene.getSoundManager().unloadAudio(soundFile, false);
       sound2.playMusic = function(runtimeScene, soundFile, loop, volume, pitch) {
         runtimeScene.getSoundManager().playMusic(soundFile, loop, volume, pitch);
       };
@@ -100,19 +105,19 @@ var gdjs;
       };
       sound2.getMusicOnChannelVolume = function(runtimeScene, channel) {
         const music = runtimeScene.getSoundManager().getMusicOnChannel(channel);
-        return music ? music.volume() * 100 : 100;
+        return music ? music.getVolume() * 100 : 100;
       };
       sound2.setMusicOnChannelVolume = function(runtimeScene, channel, volume) {
         const music = runtimeScene.getSoundManager().getMusicOnChannel(channel);
-        music && music.volume(volume / 100);
+        music && music.setVolume(volume / 100);
       };
       sound2.getMusicOnChannelPlayingOffset = function(runtimeScene, channel) {
         const music = runtimeScene.getSoundManager().getMusicOnChannel(channel);
-        return music ? music.seek() : 0;
+        return music ? music.getSeek() : 0;
       };
       sound2.setMusicOnChannelPlayingOffset = function(runtimeScene, channel, playingOffset) {
         const music = runtimeScene.getSoundManager().getMusicOnChannel(channel);
-        music && music.seek(playingOffset);
+        music && music.setSeek(playingOffset);
       };
       sound2.getMusicOnChannelPitch = function(runtimeScene, channel) {
         const music = runtimeScene.getSoundManager().getMusicOnChannel(channel);
@@ -122,6 +127,8 @@ var gdjs;
         const music = runtimeScene.getSoundManager().getMusicOnChannel(channel);
         music && music.setRate(pitch);
       };
+      sound2.preloadMusic = (runtimeScene, soundFile) => runtimeScene.getSoundManager().loadAudio(soundFile, true);
+      sound2.unloadMusic = (runtimeScene, soundFile) => runtimeScene.getSoundManager().unloadAudio(soundFile, true);
     })(sound = evtTools2.sound || (evtTools2.sound = {}));
   })(evtTools = gdjs2.evtTools || (gdjs2.evtTools = {}));
 })(gdjs || (gdjs = {}));

@@ -10,6 +10,15 @@ var gdjs;
       common2.getVariableString = function(variable) {
         return variable.getAsString();
       };
+      common2.getVariableBoolean = function(variable, compareWith) {
+        return variable.getAsBoolean() === compareWith;
+      };
+      common2.setVariableBoolean = function(variable, newValue) {
+        variable.setBoolean(newValue);
+      };
+      common2.toggleVariableBoolean = function(variable) {
+        variable.setBoolean(!variable.getAsBoolean());
+      };
       common2.sceneVariableExists = function(runtimeScene, variableName) {
         return runtimeScene.getVariables().has(variableName);
       };
@@ -25,11 +34,17 @@ var gdjs;
       common2.variableClearChildren = function(variable) {
         variable.clearChildren();
       };
+      common2.variablePushCopy = function(array, variable) {
+        array.pushVariableCopy(variable);
+      };
+      common2.valuePush = function(array, value) {
+        array.pushValue(value);
+      };
+      common2.variableRemoveAt = function(array, index) {
+        array.removeAtIndex(index);
+      };
       common2.getVariableChildCount = function(variable) {
-        if (variable.isStructure() == false) {
-          return 0;
-        }
-        return Object.keys(variable.getAllChildren()).length;
+        return variable.getChildrenCount();
       };
       common2.toNumber = function(str) {
         return parseFloat(str);

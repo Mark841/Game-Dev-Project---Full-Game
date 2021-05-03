@@ -267,8 +267,8 @@ var gdjs;
         event.stopPropagation();
         return false;
       };
-      renderer.view.onmousewheel = function(event) {
-        manager.onMouseWheel(event.wheelDelta);
+      renderer.view.onwheel = function(event) {
+        manager.onMouseWheel(-event.deltaY);
       };
       window2.addEventListener("touchmove", function(e) {
         e.preventDefault();

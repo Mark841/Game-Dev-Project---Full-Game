@@ -63,27 +63,41 @@ var gdjs;
         runtimeScene.getGame().enableMetrics(enable);
       };
       network2.variableStructureToJSON = function(variable) {
-        if (!variable.isStructure()) {
-          if (variable.isNumber()) {
-            return JSON.stringify(variable.getAsNumber());
-          } else {
-            return JSON.stringify(variable.getAsString());
-          }
-        }
-        let str = "{";
-        let firstChild = true;
-        const children = variable.getAllChildren();
-        for (const p in children) {
-          if (children.hasOwnProperty(p)) {
-            if (!firstChild) {
-              str += ",";
+        if (variable.isPrimitive()) {
+          return JSON.stringify(variable.getValue());
+        } else if (variable.getType() === "array") {
+          let str = "[";
+          let firstChild = true;
+          const children = variable.getAllChildren();
+          for (const p in children) {
+            if (children.hasOwnProperty(p)) {
+              if (!firstChild) {
+                str += ",";
+              }
+              str += network2.variableStructureToJSON(children[p]);
+              firstChild = false;
             }
-            str += JSON.stringify(p) + ": " + gdjs2.evtTools.network.variableStructureToJSON(children[p]);
-            firstChild = false;
           }
+          str += "]";
+          return str;
+        } else if (variable.getType() === "structure") {
+          let str = "{";
+          let firstChild = true;
+          const children = variable.getAllChildren();
+          for (const p in children) {
+            if (children.hasOwnProperty(p)) {
+              if (!firstChild) {
+                str += ",";
+              }
+              str += JSON.stringify(p) + ": " + network2.variableStructureToJSON(children[p]);
+              firstChild = false;
+            }
+          }
+          str += "}";
+          return str;
         }
-        str += "}";
-        return str;
+        console.error("JSON conversion error: Variable type not recognized");
+        return "";
       };
       network2.objectVariableStructureToJSON = function(object, variable) {
         return gdjs2.evtTools.network.variableStructureToJSON(variable);
@@ -91,28 +105,34 @@ var gdjs;
       network2._objectToVariable = function(obj, variable) {
         if (obj === null) {
           variable.setString("null");
-        } else if ((typeof obj === "number" || typeof obj === "string") && !isNaN(obj)) {
-          variable.setNumber(obj);
-        } else if (typeof obj === "string" || obj instanceof String) {
+        } else if (typeof obj === "number") {
+          if (Number.isNaN(obj)) {
+            console.warn("Variables cannot be set to NaN, setting it to 0.");
+            variable.setNumber(0);
+          } else {
+            variable.setNumber(obj);
+          }
+        } else if (typeof obj === "string") {
           variable.setString(obj);
         } else if (typeof obj === "undefined") {
         } else if (typeof obj === "boolean") {
-          variable.setString("" + obj);
+          variable.setBoolean(obj);
         } else if (Array.isArray(obj)) {
-          for (var i = 0; i < obj.length; ++i) {
-            gdjs2.evtTools.network._objectToVariable(obj[i], variable.getChild(i.toString()));
+          variable.castTo("array");
+          variable.clearChildren();
+          for (const i in obj) {
+            network2._objectToVariable(obj[i], variable.getChild(i));
           }
         } else if (typeof obj === "object") {
+          variable.castTo("structure");
+          variable.clearChildren();
           for (var p in obj) {
             if (obj.hasOwnProperty(p)) {
-              gdjs2.evtTools.network._objectToVariable(obj[p], variable.getChild(p));
+              network2._objectToVariable(obj[p], variable.getChild(p));
             }
           }
         } else if (typeof obj === "symbol") {
           variable.setString(obj.toString());
-        } else if (typeof obj === "number" && isNaN(obj)) {
-          console.warn("Variables cannot be set to NaN, setting it to 0.");
-          variable.setNumber(0);
         } else if (typeof obj === "bigint") {
           if (obj > Number.MAX_SAFE_INTEGER)
             console.warn("Integers bigger than " + Number.MAX_SAFE_INTEGER + " aren't supported by variables, it will be reduced to that size.");

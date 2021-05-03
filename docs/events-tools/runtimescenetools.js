@@ -111,19 +111,19 @@ var gdjs;
         if (!runtimeScene3.getGame().getSceneData(newSceneName)) {
           return;
         }
-        runtimeScene3.requestChange(clearOthers ? gdjs2.RuntimeScene.CLEAR_SCENES : gdjs2.RuntimeScene.REPLACE_SCENE, newSceneName);
+        runtimeScene3.requestChange(clearOthers ? gdjs2.SceneChangeRequest.CLEAR_SCENES : gdjs2.SceneChangeRequest.REPLACE_SCENE, newSceneName);
       };
       runtimeScene2.pushScene = function(runtimeScene3, newSceneName) {
         if (!runtimeScene3.getGame().getSceneData(newSceneName)) {
           return;
         }
-        runtimeScene3.requestChange(gdjs2.RuntimeScene.PUSH_SCENE, newSceneName);
+        runtimeScene3.requestChange(gdjs2.SceneChangeRequest.PUSH_SCENE, newSceneName);
       };
       runtimeScene2.popScene = function(runtimeScene3) {
-        runtimeScene3.requestChange(gdjs2.RuntimeScene.POP_SCENE);
+        runtimeScene3.requestChange(gdjs2.SceneChangeRequest.POP_SCENE);
       };
       runtimeScene2.stopGame = function(runtimeScene3) {
-        runtimeScene3.requestChange(gdjs2.RuntimeScene.STOP_GAME);
+        runtimeScene3.requestChange(gdjs2.SceneChangeRequest.STOP_GAME);
       };
       runtimeScene2.createObjectsFromExternalLayout = function(scene, externalLayout, xPos, yPos) {
         const externalLayoutData = scene.getGame().getExternalLayoutData(externalLayout);

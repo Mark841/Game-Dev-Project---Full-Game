@@ -49,21 +49,56 @@ var gdjs;
         this._debugDraw = new PIXI.Graphics();
         this._pixiContainer.addChild(this._debugDraw);
       }
+      const displayAABB = true;
+      const displayHitboxesAndSomePoints = true;
       const debugDraw = this._debugDraw;
       debugDraw.clear();
-      debugDraw.beginFill(6842600);
-      debugDraw.lineStyle(1, 6842600, 1);
-      debugDraw.fill.alpha = 0.1;
+      debugDraw.beginFill();
       debugDraw.alpha = 0.8;
-      for (let i = 0; i < instances.length; i++) {
-        const object = instances[i];
-        const cameraCoords = layersCameraCoordinates[object.getLayer()];
-        const rendererObject = object.getRendererObject();
-        if (!cameraCoords || !rendererObject) {
-          continue;
+      debugDraw.lineStyle(2, 255, 1);
+      if (displayAABB) {
+        for (let i = 0; i < instances.length; i++) {
+          const object = instances[i];
+          const cameraCoords = layersCameraCoordinates[object.getLayer()];
+          const rendererObject = object.getRendererObject();
+          if (!cameraCoords || !rendererObject) {
+            continue;
+          }
+          const aabb = object.getAABB();
+          debugDraw.fill.alpha = 0.2;
+          debugDraw.line.color = 7835368;
+          debugDraw.fill.color = 7835368;
+          debugDraw.drawRect(aabb.min[0], aabb.min[1], aabb.max[0] - aabb.min[0], aabb.max[1] - aabb.min[1]);
         }
-        const aabb = object.getAABB();
-        debugDraw.drawRect(aabb.min[0], aabb.min[1], aabb.max[0] - aabb.min[0], aabb.max[1] - aabb.min[1]);
+      }
+      if (displayHitboxesAndSomePoints) {
+        for (let i = 0; i < instances.length; i++) {
+          const object = instances[i];
+          const cameraCoords = layersCameraCoordinates[object.getLayer()];
+          const rendererObject = object.getRendererObject();
+          if (!cameraCoords || !rendererObject) {
+            continue;
+          }
+          const hitboxes = object.getHitBoxes();
+          for (let j = 0; j < hitboxes.length; j++) {
+            const polygon = [];
+            hitboxes[j].vertices.forEach((point) => {
+              polygon.push(point[0]);
+              polygon.push(point[1]);
+            });
+            debugDraw.fill.alpha = 0;
+            debugDraw.line.color = 15231080;
+            debugDraw.drawPolygon(polygon);
+          }
+          debugDraw.fill.alpha = 0.8;
+          debugDraw.line.color = 6875240;
+          debugDraw.fill.color = 6875240;
+          debugDraw.drawCircle(object.getDrawableX(), object.getDrawableY(), 3);
+          debugDraw.fill.alpha = 0.8;
+          debugDraw.line.color = 15263848;
+          debugDraw.fill.color = 15263848;
+          debugDraw.drawCircle(object.getDrawableX() + object.getCenterX(), object.getDrawableY() + object.getCenterY(), 3);
+        }
       }
       debugDraw.endFill();
     }
