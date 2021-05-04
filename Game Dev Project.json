@@ -4463,45 +4463,6 @@
       ],
       "objects": [
         {
-          "name": "GameOverFade",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "NewObject",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.07999999821186066,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "NewObject-1-4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "bold": true,
           "italic": false,
           "name": "Statistics",
@@ -4690,6 +4651,45 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "name": "GameOverFade",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewObject",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.07999999821186066,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "NewObject-1-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "name": "Enemy1",
@@ -16298,7 +16298,7 @@
               "parameters": [
                 "Stats",
                 "=",
-                "\"Time Survived: \" + GlobalVariableString(TimeSurvived) + \"\nScore: \" + GlobalVariableString(Score) + \n\"\nEnemies Killed: \" + GlobalVariableString(EnemiesKilled) + \" \nPower Ups Collected: \" + GlobalVariableString(PowerUpsCollected) +\n\"\nWave Reached: \" + GlobalVariableString(WaveNumber)"
+                "\"Time Survived: \" + GlobalVariableString(TimeSurvived) + \"\nScore: \" + GlobalVariableString(Score) + \n\"\nEnemies Killed: \" + GlobalVariableString(EnemiesKilled) + \" \nPower Ups Collected: \" + GlobalVariableString(PowerUpsCollected) +\n\"\nWave Reached: \" + GlobalVariableString(WaveReached)"
               ],
               "subInstructions": []
             }
