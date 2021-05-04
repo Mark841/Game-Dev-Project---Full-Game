@@ -16189,7 +16189,7 @@
           "persistentUuid": "78eff0f5-b3e4-4f9e-a5e7-8bd6b3da1a98",
           "width": 0,
           "x": 150,
-          "y": 150,
+          "y": 130,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -16204,9 +16204,57 @@
           "name": "Stats",
           "persistentUuid": "a4a327e0-163c-41f6-a89b-f913865d2e55",
           "width": 0,
-          "x": 280,
-          "y": 280,
+          "x": 250,
+          "y": 260,
           "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Menu",
+          "persistentUuid": "05f3db93-369c-40b0-9b99-a05c2c057308",
+          "width": 0,
+          "x": 100,
+          "y": 490,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "PlayAgain",
+          "persistentUuid": "e3d68f2d-f553-4f08-9bd9-6244e9687370",
+          "width": 0,
+          "x": 500,
+          "y": 490,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Quit",
+          "persistentUuid": "0338aeb1-ff6f-4a7d-92ce-21c028482116",
+          "width": 0,
+          "x": 360,
+          "y": 540,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -16243,6 +16291,63 @@
           "variables": [],
           "behaviors": [],
           "string": "Time Survived: 0\nScore: 0\nEnemies Killed: 0\nPower Ups Collected: 0\nWave Reached: 0\n",
+          "font": "",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 235,
+            "r": 255
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "Menu",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "BACK TO MENU",
+          "font": "",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 255
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "PlayAgain",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "PLAY AGAIN",
+          "font": "",
+          "characterSize": 30,
+          "color": {
+            "b": 0,
+            "g": 255,
+            "r": 137
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "Quit",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "QUIT",
           "font": "",
           "characterSize": 30,
           "color": {
@@ -16299,6 +16404,169 @@
                 "Stats",
                 "=",
                 "\"Time Survived: \" + GlobalVariableString(TimeSurvived) + \"\nScore: \" + GlobalVariableString(Score) + \n\"\nEnemies Killed: \" + GlobalVariableString(EnemiesKilled) + \" \nPower Ups Collected: \" + GlobalVariableString(PowerUpsCollected) +\n\"\nWave Reached: \" + GlobalVariableString(WaveReached)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Menu",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Main Menu\"",
+                "no"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "PlayAgain",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Level 1\"",
+                "yes"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "Quit",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Quit"
+              },
+              "parameters": [
+                ""
               ],
               "subInstructions": []
             }
