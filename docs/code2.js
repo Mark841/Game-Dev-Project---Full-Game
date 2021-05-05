@@ -145,7 +145,7 @@ gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableBo
 }if ( gdjs.Game_32OverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32OverCode.conditionTrue_1 = gdjs.Game_32OverCode.condition1IsTrue_0;
-gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10667316);
+gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11157428);
 }
 }}
 if (gdjs.Game_32OverCode.condition1IsTrue_0.val) {

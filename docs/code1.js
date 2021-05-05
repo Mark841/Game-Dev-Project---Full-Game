@@ -1393,6 +1393,12 @@ for(var i = 0, len = gdjs.Level_321Code.GDBoss2Objects1.length ;i < len;++i) {
 for(var i = 0, len = gdjs.Level_321Code.GDBoss2Objects1.length ;i < len;++i) {
     gdjs.Level_321Code.GDBoss2Objects1[i].returnVariable(gdjs.Level_321Code.GDBoss2Objects1[i].getVariables().get("Dead")).setNumber(0);
 }
+}{for(var i = 0, len = gdjs.Level_321Code.GDBoss1Objects1.length ;i < len;++i) {
+    gdjs.Level_321Code.GDBoss1Objects1[i].returnVariable(gdjs.Level_321Code.GDBoss1Objects1[i].getVariables().get("Health")).setNumber(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)));
+}
+for(var i = 0, len = gdjs.Level_321Code.GDBoss2Objects1.length ;i < len;++i) {
+    gdjs.Level_321Code.GDBoss2Objects1[i].returnVariable(gdjs.Level_321Code.GDBoss2Objects1[i].getVariables().get("Health")).setNumber(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)));
+}
 }{runtimeScene.getVariables().get("ActiveEnemies").add(1);
 }{runtimeScene.getVariables().get("ObjectsInScene").add(1);
 }{runtimeScene.getVariables().get("BossSpawnSide").setNumber(gdjs.randomInRange(1, 4));
@@ -1442,6 +1448,12 @@ for(var i = 0, len = gdjs.Level_321Code.GDBoss2Objects1.length ;i < len;++i) {
 }
 for(var i = 0, len = gdjs.Level_321Code.GDBoss2Objects1.length ;i < len;++i) {
     gdjs.Level_321Code.GDBoss2Objects1[i].returnVariable(gdjs.Level_321Code.GDBoss2Objects1[i].getVariables().get("Dead")).setNumber(0);
+}
+}{for(var i = 0, len = gdjs.Level_321Code.GDBoss1Objects1.length ;i < len;++i) {
+    gdjs.Level_321Code.GDBoss1Objects1[i].returnVariable(gdjs.Level_321Code.GDBoss1Objects1[i].getVariables().get("Health")).setNumber(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)));
+}
+for(var i = 0, len = gdjs.Level_321Code.GDBoss2Objects1.length ;i < len;++i) {
+    gdjs.Level_321Code.GDBoss2Objects1[i].returnVariable(gdjs.Level_321Code.GDBoss2Objects1[i].getVariables().get("Health")).setNumber(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)));
 }
 }{runtimeScene.getVariables().get("ActiveEnemies").add(1);
 }{runtimeScene.getVariables().get("ObjectsInScene").add(1);
@@ -1493,6 +1505,12 @@ for(var i = 0, len = gdjs.Level_321Code.GDBoss2Objects1.length ;i < len;++i) {
 for(var i = 0, len = gdjs.Level_321Code.GDBoss2Objects1.length ;i < len;++i) {
     gdjs.Level_321Code.GDBoss2Objects1[i].returnVariable(gdjs.Level_321Code.GDBoss2Objects1[i].getVariables().get("Dead")).setNumber(0);
 }
+}{for(var i = 0, len = gdjs.Level_321Code.GDBoss1Objects1.length ;i < len;++i) {
+    gdjs.Level_321Code.GDBoss1Objects1[i].returnVariable(gdjs.Level_321Code.GDBoss1Objects1[i].getVariables().get("Health")).setNumber(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)));
+}
+for(var i = 0, len = gdjs.Level_321Code.GDBoss2Objects1.length ;i < len;++i) {
+    gdjs.Level_321Code.GDBoss2Objects1[i].returnVariable(gdjs.Level_321Code.GDBoss2Objects1[i].getVariables().get("Health")).setNumber(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)));
+}
 }{runtimeScene.getVariables().get("ActiveEnemies").add(1);
 }{runtimeScene.getVariables().get("ObjectsInScene").add(1);
 }{runtimeScene.getVariables().get("BossSpawnSide").setNumber(gdjs.randomInRange(1, 4));
@@ -1542,6 +1560,12 @@ for(var i = 0, len = gdjs.Level_321Code.GDBoss2Objects1.length ;i < len;++i) {
 }
 for(var i = 0, len = gdjs.Level_321Code.GDBoss2Objects1.length ;i < len;++i) {
     gdjs.Level_321Code.GDBoss2Objects1[i].returnVariable(gdjs.Level_321Code.GDBoss2Objects1[i].getVariables().get("Dead")).setNumber(0);
+}
+}{for(var i = 0, len = gdjs.Level_321Code.GDBoss1Objects1.length ;i < len;++i) {
+    gdjs.Level_321Code.GDBoss1Objects1[i].returnVariable(gdjs.Level_321Code.GDBoss1Objects1[i].getVariables().get("Health")).setNumber(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)));
+}
+for(var i = 0, len = gdjs.Level_321Code.GDBoss2Objects1.length ;i < len;++i) {
+    gdjs.Level_321Code.GDBoss2Objects1[i].returnVariable(gdjs.Level_321Code.GDBoss2Objects1[i].getVariables().get("Health")).setNumber(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(11)));
 }
 }{runtimeScene.getVariables().get("ActiveEnemies").add(1);
 }{runtimeScene.getVariables().get("ObjectsInScene").add(1);
@@ -2033,7 +2057,6 @@ gdjs.Level_321Code.GDWaveObjects1.length = 0;
 }{runtimeScene.getVariables().get("MaxEnemies").setNumber(400);
 }{runtimeScene.getVariables().get("PushDuration").setNumber(0.65);
 }{runtimeScene.getVariables().get("DamageDealtToPlayer").setNumber(1);
-}{runtimeScene.getVariables().get("BossDamageDealtToPlayer").setNumber(3);
 }{runtimeScene.getVariables().get("PowerUpSpawnInterval").setNumber(5);
 }{runtimeScene.getVariables().get("ScoreSpawnInterval").setNumber(10);
 }{runtimeScene.getVariables().get("MaxPowerUpsOnScreen").setNumber(1);
@@ -2061,6 +2084,7 @@ gdjs.Level_321Code.GDWaveObjects1.length = 0;
     gdjs.Level_321Code.GDPlayerObjects1[i].returnVariable(gdjs.Level_321Code.GDPlayerObjects1[i].getVariables().getFromIndex(3)).setNumber(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(9)));
 }
 }{runtimeScene.getVariables().get("BossSpawnSide").setNumber(gdjs.randomInRange(1, 4));
+}{runtimeScene.getVariables().get("BossDamageDealtToPlayer").setNumber(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(12)));
 }}
 
 }
@@ -3886,6 +3910,7 @@ gdjs.Level_321Code.conditionTrue_1.val = true && gdjs.Level_321Code.condition0Is
 }if (gdjs.Level_321Code.condition0IsTrue_0.val) {
 /* Reuse gdjs.Level_321Code.GDPlayerObjects1 */
 {runtimeScene.getVariables().get("DamageDealtToPlayer").setNumber(0);
+}{runtimeScene.getVariables().get("BossDamageDealtToPlayer").setNumber(0);
 }{for(var i = 0, len = gdjs.Level_321Code.GDPlayerObjects1.length ;i < len;++i) {
     gdjs.Level_321Code.GDPlayerObjects1[i].returnVariable(gdjs.Level_321Code.GDPlayerObjects1[i].getVariables().getFromIndex(7)).setNumber(1);
 }
@@ -3926,6 +3951,7 @@ gdjs.Level_321Code.conditionTrue_1.val = true && gdjs.Level_321Code.condition0Is
 }if (gdjs.Level_321Code.condition0IsTrue_0.val) {
 /* Reuse gdjs.Level_321Code.GDPlayerObjects1 */
 {runtimeScene.getVariables().get("DamageDealtToPlayer").setNumber(1);
+}{runtimeScene.getVariables().get("BossDamageDealtToPlayer").setNumber(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(12)));
 }{for(var i = 0, len = gdjs.Level_321Code.GDPlayerObjects1.length ;i < len;++i) {
     gdjs.Level_321Code.GDPlayerObjects1[i].returnVariable(gdjs.Level_321Code.GDPlayerObjects1[i].getVariables().getFromIndex(7)).setNumber(0);
 }

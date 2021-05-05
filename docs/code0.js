@@ -267,7 +267,7 @@ gdjs.Main_32MenuCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableBo
 }if ( gdjs.Main_32MenuCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Main_32MenuCode.conditionTrue_1 = gdjs.Main_32MenuCode.condition1IsTrue_0;
-gdjs.Main_32MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10403812);
+gdjs.Main_32MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10853452);
 }
 }}
 if (gdjs.Main_32MenuCode.condition1IsTrue_0.val) {
@@ -373,6 +373,8 @@ gdjs.Main_32MenuCode.conditionTrue_1.val = true && gdjs.Main_32MenuCode.conditio
 }{runtimeScene.getGame().getVariables().getFromIndex(8).setNumber(0.2);
 }{runtimeScene.getGame().getVariables().getFromIndex(9).setNumber(360);
 }{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(60);
+}{runtimeScene.getGame().getVariables().getFromIndex(11).setNumber(5);
+}{runtimeScene.getGame().getVariables().getFromIndex(12).setNumber(3);
 }}
 
 }
@@ -422,6 +424,8 @@ gdjs.Main_32MenuCode.conditionTrue_1.val = true && gdjs.Main_32MenuCode.conditio
 }{runtimeScene.getGame().getVariables().getFromIndex(8).setNumber(0.4);
 }{runtimeScene.getGame().getVariables().getFromIndex(9).setNumber(180);
 }{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(45);
+}{runtimeScene.getGame().getVariables().getFromIndex(11).setNumber(8);
+}{runtimeScene.getGame().getVariables().getFromIndex(12).setNumber(3);
 }}
 
 }
@@ -471,6 +475,8 @@ gdjs.Main_32MenuCode.conditionTrue_1.val = true && gdjs.Main_32MenuCode.conditio
 }{runtimeScene.getGame().getVariables().getFromIndex(8).setNumber(0.8);
 }{runtimeScene.getGame().getVariables().getFromIndex(9).setNumber(180);
 }{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(30);
+}{runtimeScene.getGame().getVariables().getFromIndex(11).setNumber(10);
+}{runtimeScene.getGame().getVariables().getFromIndex(12).setNumber(5);
 }}
 
 }
@@ -520,6 +526,8 @@ gdjs.Main_32MenuCode.conditionTrue_1.val = true && gdjs.Main_32MenuCode.conditio
 }{runtimeScene.getGame().getVariables().getFromIndex(8).setNumber(0.1);
 }{runtimeScene.getGame().getVariables().getFromIndex(9).setNumber(720);
 }{runtimeScene.getGame().getVariables().getFromIndex(10).setNumber(90);
+}{runtimeScene.getGame().getVariables().getFromIndex(11).setNumber(3);
+}{runtimeScene.getGame().getVariables().getFromIndex(12).setNumber(2);
 }}
 
 }

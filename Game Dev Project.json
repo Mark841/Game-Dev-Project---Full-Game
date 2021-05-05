@@ -3325,6 +3325,16 @@
       "name": "BossSpawnRate",
       "type": "string",
       "value": "60"
+    },
+    {
+      "name": "BossHealth",
+      "type": "string",
+      "value": "5"
+    },
+    {
+      "name": "BossDamage",
+      "type": "string",
+      "value": "2"
     }
   ],
   "layouts": [
@@ -5215,6 +5225,30 @@
                 "60"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "BossHealth",
+                "=",
+                "5"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "BossDamage",
+                "=",
+                "3"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -5363,6 +5397,30 @@
                 "BossSpawnRate",
                 "=",
                 "45"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "BossHealth",
+                "=",
+                "8"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "BossDamage",
+                "=",
+                "3"
               ],
               "subInstructions": []
             }
@@ -5515,6 +5573,30 @@
                 "30"
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "BossHealth",
+                "=",
+                "10"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "BossDamage",
+                "=",
+                "5"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
@@ -5663,6 +5745,30 @@
                 "BossSpawnRate",
                 "=",
                 "90"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "BossHealth",
+                "=",
+                "3"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "BossDamage",
+                "=",
+                "2"
               ],
               "subInstructions": []
             }
@@ -15941,6 +16047,19 @@
             {
               "type": {
                 "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Bosses",
+                "Health",
+                "=",
+                "GlobalVariable(BossHealth)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
@@ -16079,6 +16198,19 @@
                 "Dead",
                 "=",
                 "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Bosses",
+                "Health",
+                "=",
+                "GlobalVariable(BossHealth)"
               ],
               "subInstructions": []
             },
@@ -16229,6 +16361,19 @@
             {
               "type": {
                 "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Bosses",
+                "Health",
+                "=",
+                "GlobalVariable(BossHealth)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "ModVarScene"
               },
               "parameters": [
@@ -16367,6 +16512,19 @@
                 "Dead",
                 "=",
                 "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Bosses",
+                "Health",
+                "=",
+                "GlobalVariable(BossHealth)"
               ],
               "subInstructions": []
             },
@@ -17768,18 +17926,6 @@
                 "value": "ModVarScene"
               },
               "parameters": [
-                "BossDamageDealtToPlayer",
-                "=",
-                "3"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarScene"
-              },
-              "parameters": [
                 "PowerUpSpawnInterval",
                 "=",
                 "5"
@@ -18001,6 +18147,18 @@
                 "BossSpawnSide",
                 "=",
                 "RandomInRange(1,4)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "BossDamageDealtToPlayer",
+                "=",
+                "GlobalVariable(BossDamage)"
               ],
               "subInstructions": []
             }
@@ -22530,6 +22688,18 @@
             {
               "type": {
                 "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "BossDamageDealtToPlayer",
+                "=",
+                "0"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "ModVarObjet"
               },
               "parameters": [
@@ -22615,6 +22785,18 @@
                 "DamageDealtToPlayer",
                 "=",
                 "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "BossDamageDealtToPlayer",
+                "=",
+                "GlobalVariable(BossDamage)"
               ],
               "subInstructions": []
             },
