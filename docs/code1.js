@@ -2563,7 +2563,7 @@ for(var i = 0, len = gdjs.Level_321Code.GDEnemy2Objects1.length ;i < len;++i) {
 for(var i = 0, len = gdjs.Level_321Code.GDEnemy2Objects1.length ;i < len;++i) {
     gdjs.Level_321Code.GDEnemy2Objects1[i].resetTimer("Pushed");
 }
-}{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "alien scream.mp3", 5, false, 80, 1);
+}{gdjs.evtTools.sound.playSoundOnChannel(runtimeScene, "alien scream.mp3", 5, false, 80, 2);
 }}
 
 }

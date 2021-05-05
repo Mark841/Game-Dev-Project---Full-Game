@@ -9,6 +9,8 @@ gdjs.Game_32OverCode.GDPlayAgainObjects1= [];
 gdjs.Game_32OverCode.GDPlayAgainObjects2= [];
 gdjs.Game_32OverCode.GDQuitObjects1= [];
 gdjs.Game_32OverCode.GDQuitObjects2= [];
+gdjs.Game_32OverCode.GDDifficultyObjects1= [];
+gdjs.Game_32OverCode.GDDifficultyObjects2= [];
 
 gdjs.Game_32OverCode.conditionTrue_0 = {val:false};
 gdjs.Game_32OverCode.condition0IsTrue_0 = {val:false};
@@ -166,6 +168,70 @@ gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.input.isKeyPressed(r
 }
 
 
+{
+
+
+gdjs.Game_32OverCode.condition0IsTrue_0.val = false;
+{
+gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)) == 1;
+}if (gdjs.Game_32OverCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("Difficulty"), gdjs.Game_32OverCode.GDDifficultyObjects1);
+{for(var i = 0, len = gdjs.Game_32OverCode.GDDifficultyObjects1.length ;i < len;++i) {
+    gdjs.Game_32OverCode.GDDifficultyObjects1[i].setString("DIFFICULTY: VERY HARD");
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.Game_32OverCode.condition0IsTrue_0.val = false;
+{
+gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)) == 3;
+}if (gdjs.Game_32OverCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("Difficulty"), gdjs.Game_32OverCode.GDDifficultyObjects1);
+{for(var i = 0, len = gdjs.Game_32OverCode.GDDifficultyObjects1.length ;i < len;++i) {
+    gdjs.Game_32OverCode.GDDifficultyObjects1[i].setString("DIFFICULTY: HARD");
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.Game_32OverCode.condition0IsTrue_0.val = false;
+{
+gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)) == 5;
+}if (gdjs.Game_32OverCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("Difficulty"), gdjs.Game_32OverCode.GDDifficultyObjects1);
+{for(var i = 0, len = gdjs.Game_32OverCode.GDDifficultyObjects1.length ;i < len;++i) {
+    gdjs.Game_32OverCode.GDDifficultyObjects1[i].setString("DIFFICULTY: MEDIUM");
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.Game_32OverCode.condition0IsTrue_0.val = false;
+{
+gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(6)) == 10;
+}if (gdjs.Game_32OverCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("Difficulty"), gdjs.Game_32OverCode.GDDifficultyObjects1);
+{for(var i = 0, len = gdjs.Game_32OverCode.GDDifficultyObjects1.length ;i < len;++i) {
+    gdjs.Game_32OverCode.GDDifficultyObjects1[i].setString("DIFFICULTY: EASY");
+}
+}}
+
+}
+
+
 };
 
 gdjs.Game_32OverCode.func = function(runtimeScene) {
@@ -181,6 +247,8 @@ gdjs.Game_32OverCode.GDPlayAgainObjects1.length = 0;
 gdjs.Game_32OverCode.GDPlayAgainObjects2.length = 0;
 gdjs.Game_32OverCode.GDQuitObjects1.length = 0;
 gdjs.Game_32OverCode.GDQuitObjects2.length = 0;
+gdjs.Game_32OverCode.GDDifficultyObjects1.length = 0;
+gdjs.Game_32OverCode.GDDifficultyObjects2.length = 0;
 
 gdjs.Game_32OverCode.eventsList0(runtimeScene);
 return;

@@ -455,7 +455,7 @@ gdjs.Main_32MenuCode.conditionTrue_1.val = true && gdjs.Main_32MenuCode.conditio
 }
 }{runtimeScene.getGame().getVariables().getFromIndex(6).setNumber(1);
 }{runtimeScene.getGame().getVariables().getFromIndex(7).setNumber(35);
-}{runtimeScene.getGame().getVariables().getFromIndex(8).setNumber(0.4);
+}{runtimeScene.getGame().getVariables().getFromIndex(8).setNumber(0.8);
 }{runtimeScene.getGame().getVariables().getFromIndex(9).setNumber(180);
 }}
 

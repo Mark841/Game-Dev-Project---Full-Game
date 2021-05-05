@@ -369,51 +369,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "Attacking-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Attacking-1.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Attacking-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Attacking-2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Attacking-3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Attacking-3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Attacking-4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Attacking-4.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Attacking-5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Attacking-5.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "spirtesheet-enemy5.png",
         "kind": "image",
         "metadata": "",
@@ -549,37 +504,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "Pushed-2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Pushed-2.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Pushed-3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Pushed-3.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "Pushed-4.png",
         "kind": "image",
         "metadata": "",
         "name": "Pushed-4.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Pushed-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Pushed-1.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -681,42 +609,6 @@
         "name": "Idle-8.png",
         "smoothed": true,
         "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Attacking-1-0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Attacking-1-0.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Attacking-2-0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Attacking-2-0.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Attacking-3-0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Attacking-3-0.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "Attacking-4-0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Attacking-4-0.png",
-        "smoothed": true,
-        "userAdded": true
       },
       {
         "alwaysLoaded": false,
@@ -2832,6 +2724,177 @@
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Pushed-1-12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pushed-1-12.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Pushed-5-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pushed-5-0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Pushed-6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pushed-6.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Pushed-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pushed-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Pushed-2-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pushed-2-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Pushed-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pushed-3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Pushed-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pushed-2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Pushed-7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pushed-7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Attacking-1-12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Attacking-1-12.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Attacking-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Attacking-1.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Attacking-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Attacking-2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Attacking-2-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Attacking-2-0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Attacking-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Attacking-4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Attacking-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Attacking-3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Attacking-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Attacking-1-0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Attacking-2-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Attacking-2-2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Attacking-3-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Attacking-3-0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Attacking-4-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Attacking-4-0.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Attacking-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Attacking-5.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -4958,7 +5021,7 @@
               "parameters": [
                 "StartFireRate",
                 "=",
-                "0.4"
+                "0.8"
               ],
               "subInstructions": []
             },
@@ -6057,8 +6120,189 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": []
+                  "timeBetweenFrames": 0.20000000298023224,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Pushed-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 7
+                          },
+                          {
+                            "x": 26,
+                            "y": 9
+                          },
+                          {
+                            "x": 26,
+                            "y": 24
+                          },
+                          {
+                            "x": 6,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Pushed-2-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 7
+                          },
+                          {
+                            "x": 26,
+                            "y": 6
+                          },
+                          {
+                            "x": 26,
+                            "y": 26
+                          },
+                          {
+                            "x": 6,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Pushed-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 7
+                          },
+                          {
+                            "x": 26,
+                            "y": 2
+                          },
+                          {
+                            "x": 26,
+                            "y": 30
+                          },
+                          {
+                            "x": 6,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Pushed-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 7
+                          },
+                          {
+                            "x": 26,
+                            "y": 6
+                          },
+                          {
+                            "x": 26,
+                            "y": 26
+                          },
+                          {
+                            "x": 6,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Pushed-7.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 7
+                          },
+                          {
+                            "x": 26,
+                            "y": 9
+                          },
+                          {
+                            "x": 26,
+                            "y": 24
+                          },
+                          {
+                            "x": 6,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -6068,8 +6312,94 @@
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": []
+                  "timeBetweenFrames": 0.20000000298023224,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Attacking-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Attacking-2-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Attacking-3-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Attacking-4-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Attacking-5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
                 }
               ]
             }
@@ -16819,7 +17149,7 @@
                 "5",
                 "",
                 "80",
-                "1"
+                "2"
               ],
               "subInstructions": []
             }
@@ -19765,7 +20095,7 @@
           "persistentUuid": "a4a327e0-163c-41f6-a89b-f913865d2e55",
           "width": 0,
           "x": 250,
-          "y": 260,
+          "y": 265,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -19815,6 +20145,22 @@
           "x": 360,
           "y": 540,
           "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Difficulty",
+          "persistentUuid": "b2d45f8f-083f-4225-9ac7-5b4ff17ff754",
+          "width": 0,
+          "x": 250,
+          "y": 230,
+          "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -19914,6 +20260,25 @@
             "b": 0,
             "g": 0,
             "r": 255
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "Difficulty",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "DIFFICULTY: MEDIUM",
+          "font": "",
+          "characterSize": 30,
+          "color": {
+            "b": 255,
+            "g": 177,
+            "r": 178
           }
         }
       ],
@@ -20234,6 +20599,142 @@
               },
               "parameters": [
                 "Mute"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "StartingHealth",
+                "=",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Difficulty",
+                "=",
+                "\"DIFFICULTY: VERY HARD\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "StartingHealth",
+                "=",
+                "3"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Difficulty",
+                "=",
+                "\"DIFFICULTY: HARD\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "StartingHealth",
+                "=",
+                "5"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Difficulty",
+                "=",
+                "\"DIFFICULTY: MEDIUM\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "StartingHealth",
+                "=",
+                "10"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Difficulty",
+                "=",
+                "\"DIFFICULTY: EASY\""
               ],
               "subInstructions": []
             }
