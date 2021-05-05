@@ -3223,6 +3223,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "Description",
+          "persistentUuid": "cded148f-dcfe-420b-bb3d-f776a906d908",
+          "width": 0,
+          "x": 450,
+          "y": 300,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -3855,6 +3871,34 @@
             "g": 177,
             "r": 178
           }
+        },
+        {
+          "name": "NewObject",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": []
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Description",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "You have crashed on an alien world \nand some of your crew have been \ninfected, you must survive for as \nlong as you can in this harsh \nlandscape",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 235,
+            "r": 255
+          }
         }
       ],
       "events": [
@@ -4020,7 +4064,7 @@
                   },
                   "parameters": [
                     "",
-                    "0.5",
+                    "0.2",
                     "\"Clicked\""
                   ],
                   "subInstructions": []
@@ -4073,6 +4117,17 @@
               "parameters": [
                 "",
                 "\"Clicked\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Delete"
+              },
+              "parameters": [
+                "Description",
+                ""
               ],
               "subInstructions": []
             }
@@ -4134,7 +4189,7 @@
                   },
                   "parameters": [
                     "",
-                    "0.5",
+                    "0.2",
                     "\"Clicked\""
                   ],
                   "subInstructions": []
@@ -4187,6 +4242,20 @@
               "parameters": [
                 "",
                 "\"Clicked\""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Description",
+                "450",
+                "300",
+                ""
               ],
               "subInstructions": []
             }
