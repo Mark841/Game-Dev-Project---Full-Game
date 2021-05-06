@@ -20,7 +20,7 @@
     "author": "",
     "windowWidth": 800,
     "windowHeight": 600,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "F:\\Mark\\Uni Course\\3rd Year\\Game Dev\\Game-Dev-Project---Full-Game\\docs",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -3432,7 +3432,7 @@
     {
       "name": "BossSpawnRate",
       "type": "string",
-      "value": "60"
+      "value": "1"
     },
     {
       "name": "BossHealth",
@@ -6029,6 +6029,11 @@
         },
         {
           "name": "GameOver",
+          "type": "string",
+          "value": "0"
+        },
+        {
+          "name": "BossHealth",
           "type": "string",
           "value": "0"
         }
@@ -16262,6 +16267,19 @@
             {
               "type": {
                 "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Bosses",
+                "Bosses.Variable(Health)",
+                "=",
+                "GlobalVariable(BossHealth)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "RotateTowardPosition"
               },
               "parameters": [
@@ -16306,19 +16324,6 @@
                 "Dead",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarObjet"
-              },
-              "parameters": [
-                "Bosses",
-                "Health",
-                "=",
-                "GlobalVariable(BossHealth)"
               ],
               "subInstructions": []
             },
@@ -16410,9 +16415,22 @@
                 "",
                 "Bosses",
                 "\"Boss\" + ToString(RandomInRange(1,2))",
-                "RandomInRange(0,780)",
+                "RandomInRange(0,840)",
                 "-40",
                 ""
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Bosses",
+                "Bosses.Variable(Health)",
+                "=",
+                "GlobalVariable(BossHealth)"
               ],
               "subInstructions": []
             },
@@ -16463,19 +16481,6 @@
                 "Dead",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarObjet"
-              },
-              "parameters": [
-                "Bosses",
-                "Health",
-                "=",
-                "GlobalVariable(BossHealth)"
               ],
               "subInstructions": []
             },
@@ -16576,6 +16581,19 @@
             {
               "type": {
                 "inverted": false,
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Bosses",
+                "Bosses.Variable(Health)",
+                "=",
+                "GlobalVariable(BossHealth)"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
                 "value": "RotateTowardPosition"
               },
               "parameters": [
@@ -16620,19 +16638,6 @@
                 "Dead",
                 "=",
                 "0"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ModVarObjet"
-              },
-              "parameters": [
-                "Bosses",
-                "Health",
-                "=",
-                "GlobalVariable(BossHealth)"
               ],
               "subInstructions": []
             },
