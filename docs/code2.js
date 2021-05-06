@@ -11,6 +11,8 @@ gdjs.Game_32OverCode.GDQuitObjects1= [];
 gdjs.Game_32OverCode.GDQuitObjects2= [];
 gdjs.Game_32OverCode.GDDifficultyObjects1= [];
 gdjs.Game_32OverCode.GDDifficultyObjects2= [];
+gdjs.Game_32OverCode.GDKillBadgesObjects1= [];
+gdjs.Game_32OverCode.GDKillBadgesObjects2= [];
 
 gdjs.Game_32OverCode.conditionTrue_0 = {val:false};
 gdjs.Game_32OverCode.condition0IsTrue_0 = {val:false};
@@ -22,7 +24,7 @@ gdjs.Game_32OverCode.condition1IsTrue_1 = {val:false};
 gdjs.Game_32OverCode.condition2IsTrue_1 = {val:false};
 
 
-gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDMenuObjects1Objects = Hashtable.newFrom({"Menu": gdjs.Game_32OverCode.GDMenuObjects1});gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDPlayAgainObjects1Objects = Hashtable.newFrom({"PlayAgain": gdjs.Game_32OverCode.GDPlayAgainObjects1});gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDQuitObjects1Objects = Hashtable.newFrom({"Quit": gdjs.Game_32OverCode.GDQuitObjects1});gdjs.Game_32OverCode.eventsList0 = function(runtimeScene) {
+gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDMenuObjects1Objects = Hashtable.newFrom({"Menu": gdjs.Game_32OverCode.GDMenuObjects1});gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDPlayAgainObjects1Objects = Hashtable.newFrom({"PlayAgain": gdjs.Game_32OverCode.GDPlayAgainObjects1});gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDQuitObjects1Objects = Hashtable.newFrom({"Quit": gdjs.Game_32OverCode.GDQuitObjects1});gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDKillBadgesObjects1Objects = Hashtable.newFrom({"KillBadges": gdjs.Game_32OverCode.GDKillBadgesObjects1});gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDKillBadgesObjects1Objects = Hashtable.newFrom({"KillBadges": gdjs.Game_32OverCode.GDKillBadgesObjects1});gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDKillBadgesObjects1Objects = Hashtable.newFrom({"KillBadges": gdjs.Game_32OverCode.GDKillBadgesObjects1});gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDKillBadgesObjects1Objects = Hashtable.newFrom({"KillBadges": gdjs.Game_32OverCode.GDKillBadgesObjects1});gdjs.Game_32OverCode.eventsList0 = function(runtimeScene) {
 
 {
 
@@ -145,7 +147,7 @@ gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableBo
 }if ( gdjs.Game_32OverCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32OverCode.conditionTrue_1 = gdjs.Game_32OverCode.condition1IsTrue_0;
-gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11157428);
+gdjs.Game_32OverCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(11185980);
 }
 }}
 if (gdjs.Game_32OverCode.condition1IsTrue_0.val) {
@@ -232,6 +234,75 @@ gdjs.copyArray(runtimeScene.getObjects("Difficulty"), gdjs.Game_32OverCode.GDDif
 }
 
 
+{
+
+
+gdjs.Game_32OverCode.condition0IsTrue_0.val = false;
+{
+gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) > 49;
+}if (gdjs.Game_32OverCode.condition0IsTrue_0.val) {
+gdjs.Game_32OverCode.GDKillBadgesObjects1.length = 0;
+
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDKillBadgesObjects1Objects, 600, 250, "");
+}}
+
+}
+
+
+{
+
+
+gdjs.Game_32OverCode.condition0IsTrue_0.val = false;
+{
+gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) > 99;
+}if (gdjs.Game_32OverCode.condition0IsTrue_0.val) {
+gdjs.Game_32OverCode.GDKillBadgesObjects1.length = 0;
+
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDKillBadgesObjects1Objects, 675, 250, "");
+}{for(var i = 0, len = gdjs.Game_32OverCode.GDKillBadgesObjects1.length ;i < len;++i) {
+    gdjs.Game_32OverCode.GDKillBadgesObjects1[i].setAnimation(gdjs.Game_32OverCode.GDKillBadgesObjects1[i].getAnimation() + (1));
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.Game_32OverCode.condition0IsTrue_0.val = false;
+{
+gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) > 199;
+}if (gdjs.Game_32OverCode.condition0IsTrue_0.val) {
+gdjs.Game_32OverCode.GDKillBadgesObjects1.length = 0;
+
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDKillBadgesObjects1Objects, 600, 325, "");
+}{for(var i = 0, len = gdjs.Game_32OverCode.GDKillBadgesObjects1.length ;i < len;++i) {
+    gdjs.Game_32OverCode.GDKillBadgesObjects1[i].setAnimation(gdjs.Game_32OverCode.GDKillBadgesObjects1[i].getAnimation() + (2));
+}
+}}
+
+}
+
+
+{
+
+
+gdjs.Game_32OverCode.condition0IsTrue_0.val = false;
+{
+gdjs.Game_32OverCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) > 499;
+}if (gdjs.Game_32OverCode.condition0IsTrue_0.val) {
+gdjs.Game_32OverCode.GDKillBadgesObjects1.length = 0;
+
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.Game_32OverCode.mapOfGDgdjs_46Game_9532OverCode_46GDKillBadgesObjects1Objects, 675, 325, "");
+}{for(var i = 0, len = gdjs.Game_32OverCode.GDKillBadgesObjects1.length ;i < len;++i) {
+    gdjs.Game_32OverCode.GDKillBadgesObjects1[i].setAnimation(gdjs.Game_32OverCode.GDKillBadgesObjects1[i].getAnimation() + (3));
+}
+}}
+
+}
+
+
 };
 
 gdjs.Game_32OverCode.func = function(runtimeScene) {
@@ -249,6 +320,8 @@ gdjs.Game_32OverCode.GDQuitObjects1.length = 0;
 gdjs.Game_32OverCode.GDQuitObjects2.length = 0;
 gdjs.Game_32OverCode.GDDifficultyObjects1.length = 0;
 gdjs.Game_32OverCode.GDDifficultyObjects2.length = 0;
+gdjs.Game_32OverCode.GDKillBadgesObjects1.length = 0;
+gdjs.Game_32OverCode.GDKillBadgesObjects2.length = 0;
 
 gdjs.Game_32OverCode.eventsList0(runtimeScene);
 return;
