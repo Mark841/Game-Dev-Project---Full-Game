@@ -267,7 +267,7 @@ gdjs.Main_32MenuCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableBo
 }if ( gdjs.Main_32MenuCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Main_32MenuCode.conditionTrue_1 = gdjs.Main_32MenuCode.condition1IsTrue_0;
-gdjs.Main_32MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10982820);
+gdjs.Main_32MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(10983756);
 }
 }}
 if (gdjs.Main_32MenuCode.condition1IsTrue_0.val) {

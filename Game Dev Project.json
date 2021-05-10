@@ -3432,7 +3432,7 @@
     {
       "name": "BossSpawnRate",
       "type": "string",
-      "value": "1"
+      "value": "60"
     },
     {
       "name": "BossHealth",
